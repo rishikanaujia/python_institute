@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Get certified in Python programming with Python Institute's comprehensive courses and globally recognized certifications. From beginner to professional level Python training and certification.">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      {% include 'components/head.html' %}
+
+      <title>{% block title %}Python Institute - Professional Python Certification & Training Courses{% endblock %}</title>
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="keywords" content="{{ settings.META_KEYWORDS }}">
+      <meta name="author" content="{{ settings.META_AUTHOR }}">
+      <meta property="og:title" content="{% block og_title %}Python Institute - Professional Python Certification & Training Courses{% endblock %}">
+      <meta property="og:description" content="{% block og_description %}Get certified in Python programming with Python Institute's comprehensive courses and globally recognized certifications.{% endblock %}">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="Python Institute Certification Portal">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="{% block twitter_title %}Python Institute - Professional Python Certification & Training Courses{% endblock %}">
+      <meta name="twitter:description" content="{% block twitter_description %}Get certified in Python programming with Python Institute's comprehensive courses and globally recognized certifications.{% endblock %}">
+
+      <!-- Custom styles for specific pages -->
+      {% block extra_css %}{% endblock %}
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content"
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header section -->
+      {% include 'components/header.html' %}
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative h-full">
+        {% block content %}
+        <!-- Page-specific content will be inserted here -->
+        {% endblock %}
+      </main>
+
+      <!-- Footer section -->
+      {% include 'components/footer.html' %}
+
+      <!-- Core scripts -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+
+      <!-- Main JavaScript -->
+      <script src="{{ url_for('static', path='js/main.js') }}"></script>
+
+      <!-- Custom scripts for specific pages -->
+      {% block extra_js %}{% endblock %}
+
+      <!-- TailwindCSS Configuration -->
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: {
+                  DEFAULT: '#4584b6',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  DEFAULT: '#ffde57',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  DEFAULT: '',
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Roboto, sans-serif', 'Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Open Sans, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+                body: ['Open Sans, sans-serif', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      });
+      </script>
+
+      <!-- Back to Top Button -->
+      <div class="fixed bottom-8 right-8 hidden" id="back-to-top-btn">
+        <a href="#"
+          class="flex items-center justify-center w-12 h-12 bg-primary hover:bg-primary-600 rounded-full shadow-lg transition-colors duration-300"
+          aria-label="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </a>
+      </div>
+
+      <script>
+        // Back to top button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+          const backToTopBtn = document.getElementById('back-to-top-btn');
+
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+              backToTopBtn.classList.remove('hidden');
+            } else {
+              backToTopBtn.classList.add('hidden');
+            }
+          });
+
+          backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
+   </body>
+</html>

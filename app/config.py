@@ -1,6 +1,24 @@
 import os
-from typing import Optional
-from pydantic import BaseSettings
+import logging
+from typing import Optional, Dict, Any
+from pydantic import BaseSettings, validator
+from logging.handlers import RotatingFileHandler
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        RotatingFileHandler(
+            'app.log',
+            maxBytes=10485760,  # 10MB
+            backupCount=3
+        ),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger("config")
 
 
 class Settings(BaseSettings):
@@ -44,6 +62,13 @@ class Settings(BaseSettings):
     # Certification types
     CERTIFICATION_TYPES: list = ["PCEP™", "PCAP™", "PCPP1™", "PCPP2™"]
 
+    @validator('TEMPLATE_DIR', 'STATIC_DIR')
+    def validate_directory_exists(cls, v):
+        """Validate that the specified directory exists."""
+        if not os.path.isdir(v):
+            logger.warning(f"Directory not found: {v}")
+        return v
+
     class Config:
         """Pydantic config."""
         env_file = ".env"
@@ -52,4 +77,21 @@ class Settings(BaseSettings):
 
 
 # Create settings instance
-settings = Settings()
+try:
+    settings = Settings()
+    logger.info("Configuration loaded successfully")
+
+    # Log debug mode
+    if settings.DEBUG:
+        logger.info("Application running in DEBUG mode")
+
+    # Additional validation
+    if not os.path.exists(settings.TEMPLATE_DIR):
+        logger.warning(f"Template directory does not exist: {settings.TEMPLATE_DIR}")
+    if not os.path.exists(settings.STATIC_DIR):
+        logger.warning(f"Static directory does not exist: {settings.STATIC_DIR}")
+
+except Exception as e:
+    logger.error(f"Error loading configuration: {str(e)}")
+    # Fallback to default settings
+    settings = Settings()
