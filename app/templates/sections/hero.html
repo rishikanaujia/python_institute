@@ -1,0 +1,86 @@
+<section id="hero" class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-neutral-900 dark:to-neutral-800 py-16 md:py-24">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4584b6] mb-4">
+          Python Institute
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+          Professional Python Certification
+        </h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+          Elevate your career with globally recognized Python certifications. From beginners to professionals, our comprehensive program covers all skill levels.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="{{ url_for('pages.courses') if 'courses' in pages.__all__ else '#courses' }}"
+             class="bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-center">
+            Explore Courses
+          </a>
+          <a href="{{ url_for('pages.certifications') if 'certifications' in pages.__all__ else '#certifications' }}"
+             class="bg-white dark:bg-neutral-700 text-[#4584b6] dark:text-[#ffde57] border border-[#4584b6] dark:border-[#ffde57] hover:bg-gray-100 dark:hover:bg-neutral-600 font-semibold py-3 px-6 rounded-lg transition duration-300 text-center">
+            View Certifications
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div class="relative">
+          <!-- Python logo -->
+          <div class="w-64 h-64 md:w-80 md:h-80 bg-[#ffde57] dark:bg-[#ffde57] rounded-full flex items-center justify-center shadow-lg p-6">
+            <div class="absolute inset-0 rounded-full flex items-center justify-center">
+              <div class="text-center">
+                <div class="flex items-center justify-center">
+                  <span class="text-7xl md:text-8xl text-[#4584b6]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24">
+                      <path fill="#4584b6" d="M11.95 2.5c-5.523 0-5.157 2.394-5.157 2.394l.006 2.479h5.246v.741H4.673s-2.38-.369-2.38 5.285 2.08 5.285 2.08 5.285h1.241v-2.54s-.137-2.08 2.043-2.08h5.32s2.118.035 2.118-2.08V7.207s.317-2.37-2.145-2.37h-1zm-2.925 1.394c.522 0 .948.426.948.95 0 .522-.426.95-.948.95-.524 0-.95-.428-.95-.95 0-.524.426-.95.95-.95Z"/>
+                      <path fill="#ffde57" d="M12.05 21.5c5.523 0 5.157-2.394 5.157-2.394l-.006-2.479h-5.246v-.741h7.372s2.38.369 2.38-5.285c0-5.654-2.08-5.285-2.08-5.285h-1.241v2.54s.137 2.08-2.043 2.08h-5.32s-2.118-.035-2.118 2.08v4.777s-.317 2.37 2.145 2.37h1zm2.925-1.394c-.522 0-.948-.426-.948-.95 0-.522.426-.95.948-.95.524 0 .95.428.95.95 0 .524-.426.95-.95.95Z"/>
+                    </svg>
+                  </span>
+                </div>
+                <p class="text-lg md:text-xl font-bold text-gray-700 mt-2">PYTHON INSTITUTE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature indicators -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+      <div class="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-[#4584b6] p-3 rounded-full mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Learn at Your Pace</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400">Comprehensive courses designed for all skill levels, from beginners to advanced professionals.</p>
+      </div>
+
+      <div class="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-[#4584b6] p-3 rounded-full mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Globally Recognized</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400">Our certifications are recognized worldwide, boosting your career prospects and professional credibility.</p>
+      </div>
+
+      <div class="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-[#4584b6] p-3 rounded-full mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Industry-Focused</h3>
+        </div>
+        <p class="text-gray-600 dark:text-gray-400">Curriculum designed with industry requirements in mind, preparing you for real-world Python development challenges.</p>
+      </div>
+    </div>
+  </div>
+</section>
