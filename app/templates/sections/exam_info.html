@@ -34,7 +34,28 @@
               Exam Preparation
             </button>
           </li>
-          <!-- Additional tabs omitted for brevity -->
+          <li class="mr-2" role="presentation">
+            <button class="inline-block py-4 px-4 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 font-medium text-center border-b-2 border-transparent rounded-t-lg"
+                    id="faq-tab"
+                    data-tabs-target="#faq"
+                    type="button"
+                    role="tab"
+                    aria-controls="faq"
+                    aria-selected="false">
+              FAQ
+            </button>
+          </li>
+          <li role="presentation">
+            <button class="inline-block py-4 px-4 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 font-medium text-center border-b-2 border-transparent rounded-t-lg"
+                    id="registration-tab"
+                    data-tabs-target="#registration"
+                    type="button"
+                    role="tab"
+                    aria-controls="registration"
+                    aria-selected="false">
+              Registration
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -43,11 +64,824 @@
         <!-- Overview Tab -->
         <div class="p-4 rounded-lg bg-gray-50 dark:bg-neutral-800 active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
           <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Exam Formats & Delivery</h3>
-          <!-- Tab content omitted for brevity -->
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            All Python Institute certification exams are delivered online through our secure proctoring platform, allowing you to take the exam from the comfort of your home or office.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+              <h4 class="font-semibold text-gray-800 dark:text-white mb-3">Exam Format</h4>
+              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Multiple-choice questions
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Drag-and-drop coding problems
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Code analysis questions
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  All exams are in English only
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+              <h4 class="font-semibold text-gray-800 dark:text-white mb-3">Exam Delivery</h4>
+              <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Online proctored environment
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Webcam and microphone required
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Valid ID verification required
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Available 24/7 with scheduling
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Exam Specifics</h3>
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 dark:text-gray-300 uppercase bg-gray-100 dark:bg-neutral-700">
+                <tr>
+                  <th scope="col" class="px-6 py-3">Certification</th>
+                  <th scope="col" class="px-6 py-3">Questions</th>
+                  <th scope="col" class="px-6 py-3">Duration</th>
+                  <th scope="col" class="px-6 py-3">Passing Score</th>
+                  <th scope="col" class="px-6 py-3">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white dark:bg-neutral-800 border-b dark:border-neutral-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                    PCEP™ (Entry)
+                  </th>
+                  <td class="px-6 py-4">30</td>
+                  <td class="px-6 py-4">45 minutes</td>
+                  <td class="px-6 py-4">70%</td>
+                  <td class="px-6 py-4">$59 USD</td>
+                </tr>
+                <tr class="bg-white dark:bg-neutral-800 border-b dark:border-neutral-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                    PCAP™ (Associate)
+                  </th>
+                  <td class="px-6 py-4">40</td>
+                  <td class="px-6 py-4">65 minutes</td>
+                  <td class="px-6 py-4">70%</td>
+                  <td class="px-6 py-4">$99 USD</td>
+                </tr>
+                <tr class="bg-white dark:bg-neutral-800 border-b dark:border-neutral-700">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                    PCPP1™ (Professional 1)
+                  </th>
+                  <td class="px-6 py-4">45</td>
+                  <td class="px-6 py-4">90 minutes</td>
+                  <td class="px-6 py-4">70%</td>
+                  <td class="px-6 py-4">$149 USD</td>
+                </tr>
+                <tr class="bg-white dark:bg-neutral-800">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                    PCPP2™ (Professional 2)
+                  </th>
+                  <td class="px-6 py-4">50</td>
+                  <td class="px-6 py-4">120 minutes</td>
+                  <td class="px-6 py-4">75%</td>
+                  <td class="px-6 py-4">$199 USD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Exam Policies</h3>
+          <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md mb-8">
+            <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+              <li class="flex items-start">
+                <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span><strong>Retake Policy:</strong> If you do not pass an exam, you must wait 14 days before retaking it. There is a maximum of 3 attempts within a 12-month period.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span><strong>Rescheduling:</strong> Exams can be rescheduled up to 24 hours before the scheduled time at no additional cost.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span><strong>Certification Validity:</strong> All certifications are valid for 3 years from the date of issue.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <span><strong>Accommodations:</strong> Special accommodations for candidates with disabilities are available upon request with supporting documentation.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="inline-block bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+              View Detailed Exam Objectives
+            </a>
+          </div>
         </div>
 
-        <!-- Additional tab content omitted for brevity -->
+        <!-- Preparation Tab -->
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-neutral-800" id="preparation" role="tabpanel" aria-labelledby="preparation-tab">
+          <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Preparing for Your Exam</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            Thorough preparation is key to passing your Python certification exam. We recommend the following resources and strategies to help you succeed.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="bg-white dark:bg-neutral-700 p-6 rounded-lg shadow-md">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Recommended Study Path</h4>
+              <ol class="space-y-4 text-gray-600 dark:text-gray-300 list-decimal list-inside">
+                <li class="flex items-start">
+                  <span class="font-semibold mr-2">1.</span>
+                  <div>
+                    <span class="font-semibold">Complete the corresponding course</span>
+                    <p class="mt-1 ml-5">Enroll in our official training courses designed specifically for each certification level.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="font-semibold mr-2">2.</span>
+                  <div>
+                    <span class="font-semibold">Review exam objectives</span>
+                    <p class="mt-1 ml-5">Study the detailed exam objectives to ensure you understand all required topics.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="font-semibold mr-2">3.</span>
+                  <div>
+                    <span class="font-semibold">Practice with sample questions</span>
+                    <p class="mt-1 ml-5">Take our practice tests to familiarize yourself with the exam format and types of questions.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="font-semibold mr-2">4.</span>
+                  <div>
+                    <span class="font-semibold">Hands-on practice</span>
+                    <p class="mt-1 ml-5">Apply your knowledge through practical coding exercises and projects.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <span class="font-semibold mr-2">5.</span>
+                  <div>
+                    <span class="font-semibold">Review and refresh</span>
+                    <p class="mt-1 ml-5">Before your exam, review key concepts and focus on areas where you need improvement.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="bg-white dark:bg-neutral-700 p-6 rounded-lg shadow-md">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Study Resources</h4>
+              <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-[#4584b6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                  <div>
+                    <span class="font-semibold">Official Study Guides</span>
+                    <p class="mt-1">Comprehensive guides covering all exam topics with examples and explanations.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-[#4584b6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                  </svg>
+                  <div>
+                    <span class="font-semibold">Video Tutorials</span>
+                    <p class="mt-1">Visual learning resources with step-by-step explanations of key concepts.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-[#4584b6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                  </svg>
+                  <div>
+                    <span class="font-semibold">Practice Tests</span>
+                    <p class="mt-1">Simulated exams with questions similar to those on the actual certification test.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-[#4584b6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path>
+                  </svg>
+                  <div>
+                    <span class="font-semibold">Interactive Labs</span>
+                    <p class="mt-1">Hands-on coding environments to practice Python programming skills.</p>
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-6 w-6 text-[#4584b6] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                  <div>
+                    <span class="font-semibold">Study Groups</span>
+                    <p class="mt-1">Join our community forums to connect with other candidates preparing for the same exam.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-[#4584b6] text-white p-6 rounded-lg shadow-md mb-8">
+            <h4 class="text-xl font-semibold mb-4">Exam Day Tips</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="font-semibold">Time Management</span>
+                </div>
+                <p class="text-sm">Allocate time for each question based on the total exam duration. Don't spend too long on any single question.</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                  </svg>
+                  <span class="font-semibold">Read Carefully</span>
+                </div>
+                <p class="text-sm">Pay close attention to the wording of each question. Small details can be crucial for selecting the correct answer.</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                  <span class="font-semibold">Skip & Return</span>
+                </div>
+                <p class="text-sm">If you're unsure about a question, mark it for review and come back to it later after answering easier questions.</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                  </svg>
+                  <span class="font-semibold">System Check</span>
+                </div>
+                <p class="text-sm">Test your computer system, webcam, and internet connection at least 24 hours before your scheduled exam.</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                  <span class="font-semibold">Eliminate Options</span>
+                </div>
+                <p class="text-sm">For multiple-choice questions, eliminate clearly incorrect answers first to improve your chances of selecting the right one.</p>
+              </div>
+              <div class="bg-white/10 p-4 rounded-lg">
+                <div class="flex items-center mb-2">
+                  <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"></path>
+                  </svg>
+                  <span class="font-semibold">Stay Calm</span>
+                </div>
+                <p class="text-sm">Manage your stress by taking deep breaths. Remember your preparation and approach each question methodically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="inline-block bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+              Access Study Resources
+            </a>
+          </div>
+        </div>
+
+        <!-- FAQ Tab -->
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-neutral-800" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+          <h3 class="text-xl font-semibold text-[#4584b6] mb-6">Frequently Asked Questions</h3>
+
+          <div class="space-y-4 mb-8">
+            <!-- FAQ Item 1 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">What happens if my internet connection drops during the exam?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  If your connection drops for a brief period, the exam will be paused, and you can resume once reconnected. If the disconnection lasts more than 15 minutes, the exam may be terminated, and you'll need to contact support to reschedule. We recommend using a stable internet connection and having a backup option (like mobile hotspot) available.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">Is there a recommended Python version for the exams?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  All our certification exams are currently based on Python 3.x (specifically Python 3.8+). The exam environment uses the latest stable release of Python 3. We update our exam content periodically to reflect current Python best practices and features.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">Do I need to have programming experience before taking the PCEP exam?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  No prior programming experience is required for the PCEP (entry-level) certification. However, we recommend completing our Python Essentials 1 course or having equivalent basic Python knowledge before taking the exam. The PCEP is designed for beginners who have learned the basics of Python programming.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">What ID is accepted for exam verification?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  You must present a valid, government-issued photo ID for verification. Acceptable forms include passport, driver's license, national ID card, or military ID. The name on your ID must match the name you used when registering for the exam, and the ID must be current (not expired).
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">How soon will I receive my exam results?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  You will receive preliminary results immediately after completing the exam. Official results and digital certification (if you pass) will be sent to your registered email within 3-5 business days after the exam date. This time allows for the verification of your exam session and processing of results.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="border border-gray-200 dark:border-neutral-700 rounded-lg">
+              <button class="flex justify-between items-center w-full p-5 text-left bg-white dark:bg-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-600 rounded-lg focus:outline-none" aria-expanded="false">
+                <span class="font-semibold text-gray-800 dark:text-white">Can I use reference materials during the exam?</span>
+                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="hidden p-5 bg-gray-50 dark:bg-neutral-600 rounded-b-lg">
+                <p class="text-gray-600 dark:text-gray-300">
+                  No external reference materials, notes, books, or additional browser tabs/windows are allowed during the exam. The exam is closed-book and must be completed independently. The exam environment includes the Python documentation that you would typically access with the help() function, but no internet search or external documentation is permitted.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-neutral-700 p-6 rounded-lg shadow-md text-center">
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              Don't see your question? Feel free to contact our support team.
+            </p>
+            <a href="{{ url_for('pages.contact') if 'contact' in pages.__all__ else '#contact' }}" class="inline-block bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+              Contact Support
+            </a>
+          </div>
+        </div>
+
+        <!-- Registration Tab -->
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-neutral-800" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+          <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Exam Registration Process</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-8">
+            Follow these steps to register for your Python certification exam. The process is straightforward and only takes a few minutes to complete.
+          </p>
+
+          <div class="relative mb-12">
+            <!-- Progress line -->
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-neutral-700 transform -translate-x-1/2"></div>
+
+            <div class="space-y-12">
+              <!-- Step 1 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    1
+                  </div>
+
+                  <!-- Left content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          1
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Create an Account</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Create an Account</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Sign up for an account on the Python Institute website. Provide your personal information, which will be used for your certification credentials.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Right content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pl-16 hidden md:block"></div>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    2
+                  </div>
+
+                  <!-- Left content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
+
+                  <!-- Right content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pl-16">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          2
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Select Your Exam</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Select Your Exam</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Choose the certification level that matches your skills and career goals (PCEP, PCAP, PCPP1, or PCPP2).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    3
+                  </div>
+
+                  <!-- Left content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          3
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Purchase Exam Voucher</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Purchase Exam Voucher</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Pay for your exam voucher using any major credit card, PayPal, or other supported payment methods. Vouchers are valid for 12 months from purchase.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Right content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pl-16 hidden md:block"></div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    4
+                  </div>
+
+                  <!-- Left content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
+
+                  <!-- Right content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pl-16">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          4
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Schedule Your Exam</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Schedule Your Exam</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Choose a date and time that works for you. Exams are available 24/7, so you can select a time that fits your schedule.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    5
+                  </div>
+
+                  <!-- Left content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pr-16 mb-6 md:mb-0">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          5
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Prepare Your Environment</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Prepare Your Environment</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Ensure your system meets the technical requirements. Run the system check tool to verify your webcam, microphone, and internet connection.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Right content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pl-16 hidden md:block"></div>
+                </div>
+              </div>
+
+              <!-- Step 6 -->
+              <div class="relative">
+                <div class="md:flex items-center">
+                  <!-- Step marker -->
+                  <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-[#4584b6] text-white font-bold items-center justify-center z-10">
+                    6
+                  </div>
+
+                  <!-- Left content (desktop) - Empty for mobile -->
+                  <div class="md:w-1/2 md:pr-16 hidden md:block"></div>
+
+                  <!-- Right content (desktop) / Full content (mobile) -->
+                  <div class="md:w-1/2 md:pl-16">
+                    <div class="bg-white dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+                      <div class="flex md:hidden items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-[#4584b6] flex items-center justify-center text-white font-bold mr-4">
+                          6
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Take Your Exam</h4>
+                      </div>
+                      <h4 class="hidden md:block text-lg font-semibold text-gray-800 dark:text-white mb-3">Take Your Exam</h4>
+                      <p class="text-gray-600 dark:text-gray-300">
+                        Log in 15 minutes before your scheduled time, complete the identity verification process, and begin your exam when instructed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#4584b6] rounded-lg shadow-md p-8 text-center">
+            <h4 class="text-xl font-bold text-white mb-4">Ready to Get Certified?</h4>
+            <p class="text-white mb-6">
+              Start your Python certification journey today by registering for your exam.
+            </p>
+            <a href="#" class="inline-block bg-white hover:bg-gray-100 text-[#4584b6] font-semibold py-3 px-8 rounded-lg transition duration-300">
+              Register Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Requirements Section -->
+    <div class="mt-16 bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8">
+      <h3 class="text-2xl font-bold text-[#4584b6] mb-6">Technical Requirements</h3>
+      <p class="text-gray-600 dark:text-gray-300 mb-8">
+        To ensure a smooth exam experience, your system must meet the following requirements:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#4584b6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <h4 class="text-lg font-semibold text-gray-800 dark:text-white ml-4">Computer & OS</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Windows 10/11, macOS 10.15+, or Linux
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              4GB RAM (8GB recommended)
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Dual-core processor or better
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Admin rights to install proctoring app
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#4584b6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+            </svg>
+            <h4 class="text-lg font-semibold text-gray-800 dark:text-white ml-4">Internet & Browser</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Stable broadband internet (1+ Mbps)
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Latest Chrome, Firefox, or Edge
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              JavaScript and cookies enabled
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Ability to disable browser extensions
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-50 dark:bg-neutral-700 p-5 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <svg class="h-8 w-8 text-[#4584b6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            <h4 class="text-lg font-semibold text-gray-800 dark:text-white ml-4">Webcam & Audio</h4>
+          </div>
+          <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Working webcam (min. 640x480 resolution)
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Working microphone
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Working speakers or headphones
+            </li>
+            <li class="flex items-start">
+              <svg class="h-5 w-5 text-[#4584b6] mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Ability to grant browser permissions
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-12 text-center">
+      <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Ready to demonstrate your Python expertise?</h3>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+          Register for an Exam
+        </a>
+        <a href="{{ url_for('pages.contact') if 'contact' in pages.__all__ else '#contact' }}" class="bg-white dark:bg-neutral-700 text-[#4584b6] dark:text-[#ffde57] border border-[#4584b6] dark:border-[#ffde57] hover:bg-gray-100 dark:hover:bg-neutral-600 font-semibold py-3 px-8 rounded-lg transition duration-300">
+          Contact Support
+        </a>
       </div>
     </div>
   </div>
+
+  <!-- JavaScript for tab functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Tab functionality
+      const tabs = document.querySelectorAll('[role="tab"]');
+      const tabContents = document.querySelectorAll('[role="tabpanel"]');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Deactivate all tabs
+          tabs.forEach(t => {
+            t.classList.remove('text-[#4584b6]', 'dark:text-[#4584b6]', 'border-[#4584b6]');
+            t.classList.add('text-gray-500', 'dark:text-gray-400', 'hover:text-gray-600', 'dark:hover:text-gray-300', 'border-transparent');
+            t.setAttribute('aria-selected', 'false');
+          });
+
+          // Activate clicked tab
+          tab.classList.remove('text-gray-500', 'dark:text-gray-400', 'hover:text-gray-600', 'dark:hover:text-gray-300', 'border-transparent');
+          tab.classList.add('text-[#4584b6]', 'dark:text-[#4584b6]', 'border-[#4584b6]');
+          tab.setAttribute('aria-selected', 'true');
+
+          // Hide all tab panels
+          tabContents.forEach(content => {
+            content.classList.add('hidden');
+            content.classList.remove('active');
+          });
+
+          // Show selected tab panel
+          const panelId = tab.getAttribute('data-tabs-target').substring(1);
+          const panel = document.getElementById(panelId);
+          panel.classList.remove('hidden');
+          panel.classList.add('active');
+        });
+      });
+
+      // FAQ accordion functionality
+      const faqButtons = document.querySelectorAll('#faq button');
+
+      faqButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', !expanded);
+
+          const content = button.nextElementSibling;
+          if (expanded) {
+            content.classList.add('hidden');
+          } else {
+            content.classList.remove('hidden');
+          }
+
+          const icon = button.querySelector('svg');
+          if (expanded) {
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>';
+          } else {
+            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>';
+          }
+        });
+      });
+    });
+  </script>
 </section>
