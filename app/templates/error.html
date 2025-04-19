@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% if page_title %}{{ page_title }}{% else %}Error {{ error_code }} - Python Institute{% endif %}
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .error-container {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .error-code {
+        font-size: 8rem;
+        font-weight: 700;
+        color: #4584b6;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .error-divider {
+        height: 4px;
+        width: 60px;
+        background-color: #ffde57;
+        margin: 1.5rem auto;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="py-20 bg-gray-50 dark:bg-neutral-800">
+    <div class="container mx-auto px-4">
+        <div class="error-container">
+            <div class="error-code">{{ error_code|default('404') }}</div>
+            <div class="error-divider"></div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-6">
+                {{ error_msg|default('Page not found') }}
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-8">
+                {% if error_code == 404 %}
+                    The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+                {% elif error_code == 500 %}
+                    We're sorry, but something went wrong on our server. Our team has been notified and we're working to fix the issue.
+                {% else %}
+                    An unexpected error has occurred. Please try again later or contact us if the problem persists.
+                {% endif %}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="{{ url_for('pages.home') if 'home' in pages.__all__ else '/' }}"
+                   class="bg-[#4584b6] hover:bg-[#3a71a1] text-white font-semibold py-3 px-8 rounded-lg transition duration-300">
+                    Back to Home
+                </a>
+                <a href="{{ url_for('pages.contact') if 'contact' in pages.__all__ else '#contact' }}"
+                   class="bg-white dark:bg-neutral-700 text-[#4584b6] dark:text-[#ffde57] border border-[#4584b6] dark:border-[#ffde57] hover:bg-gray-100 dark:hover:bg-neutral-600 font-semibold py-3 px-8 rounded-lg transition duration-300">
+                    Contact Support
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Optional: Add some suggestions based on error type -->
+{% if error_code == 404 %}
+<section class="py-12 bg-white dark:bg-neutral-900">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-8">
+            You might be interested in:
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Explore Our Courses</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Discover our comprehensive Python courses, from beginner to professional level.
+                </p>
+                <a href="{{ url_for('pages.courses') if 'courses' in pages.__all__ else '#courses' }}"
+                   class="text-[#4584b6] dark:text-[#ffde57] hover:underline font-medium inline-flex items-center">
+                    View Courses
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="bg-gray-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Certification Programs</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Learn about our industry-recognized Python certification programs.
+                </p>
+                <a href="{{ url_for('pages.certifications') if 'certifications' in pages.__all__ else '#certifications' }}"
+                   class="text-[#4584b6] dark:text-[#ffde57] hover:underline font-medium inline-flex items-center">
+                    View Certifications
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="bg-gray-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-[#4584b6] mb-4">Learning Roadmap</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Follow our structured path from beginner to professional Python developer.
+                </p>
+                <a href="{{ url_for('pages.roadmap') if 'roadmap' in pages.__all__ else '#roadmap' }}"
+                   class="text-[#4584b6] dark:text-[#ffde57] hover:underline font-medium inline-flex items-center">
+                    View Roadmap
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if error_code == 500 %}
+<section class="py-12 bg-white dark:bg-neutral-900">
+    <div class="container mx-auto px-4 max-w-2xl">
+        <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-8">
+            What you can do:
+        </h2>
+
+        <div class="bg-gray-50 dark:bg-neutral-800 p-6 rounded-lg shadow-md">
+            <ul class="space-y-4 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-[#4584b6] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    <span>Refresh the page and try again</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-[#4584b6] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Try again later as we might be experiencing temporary technical difficulties</span>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-[#4584b6] mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span>Contact our support team if the problem persists</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
